@@ -12,16 +12,16 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lingo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sj2-mh-Ytb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sj2-mh-Ytb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="912"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDZ-CJ-Ux2">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="912"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yCY-zE-orN">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yCY-zE-orN">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="418"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="418" id="Bi6-ji-PbM"/>
@@ -50,35 +50,36 @@
                                                     <color key="titleColor" red="0.1137254902" green="0.55294117649999996" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="selectLanguageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnL-iR-8Ok"/>
+                                                </connections>
                                             </button>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtC-hO-RE3">
-                                                <rect key="frame" x="0.0" y="570" width="414" height="238"/>
+                                                <rect key="frame" x="0.0" y="571" width="414" height="237"/>
+                                                <color key="backgroundColor" red="0.1137254902" green="0.55294117649999996" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" red="0.1137254902" green="0.55294117649999996" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="414" id="DjV-NI-8Lr"/>
-                                                    <constraint firstAttribute="height" constant="238" id="xVZ-3f-hgy"/>
+                                                    <constraint firstAttribute="height" constant="237" id="bW7-de-a4r"/>
                                                 </constraints>
                                             </pickerView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="QtC-hO-RE3" firstAttribute="centerX" secondItem="WDZ-CJ-Ux2" secondAttribute="centerX" id="10r-Od-MCm"/>
-                                            <constraint firstItem="QtC-hO-RE3" firstAttribute="top" secondItem="Eeo-LO-TTy" secondAttribute="bottom" constant="7" id="D1b-3Q-lsI"/>
+                                            <constraint firstItem="QtC-hO-RE3" firstAttribute="leading" secondItem="yCY-zE-orN" secondAttribute="leading" id="2dp-97-zIK"/>
+                                            <constraint firstItem="QtC-hO-RE3" firstAttribute="trailing" secondItem="yCY-zE-orN" secondAttribute="trailing" id="9ZH-iP-zBh"/>
                                             <constraint firstItem="yCY-zE-orN" firstAttribute="top" secondItem="WDZ-CJ-Ux2" secondAttribute="top" id="E44-vh-gts"/>
                                             <constraint firstItem="Eeo-LO-TTy" firstAttribute="centerX" secondItem="WDZ-CJ-Ux2" secondAttribute="centerX" id="G22-Y3-Ss5"/>
                                             <constraint firstItem="LO3-Wc-hk9" firstAttribute="top" secondItem="yCY-zE-orN" secondAttribute="bottom" constant="15" id="GCM-NU-ffj"/>
                                             <constraint firstAttribute="trailing" secondItem="LO3-Wc-hk9" secondAttribute="trailing" constant="8" id="GCn-vj-xys"/>
-                                            <constraint firstItem="QtC-hO-RE3" firstAttribute="leading" secondItem="WDZ-CJ-Ux2" secondAttribute="leading" id="IfQ-Xf-7aJ"/>
                                             <constraint firstItem="Eeo-LO-TTy" firstAttribute="leading" secondItem="WDZ-CJ-Ux2" secondAttribute="leading" constant="8" id="KrP-37-1Y0"/>
                                             <constraint firstItem="LO3-Wc-hk9" firstAttribute="leading" secondItem="WDZ-CJ-Ux2" secondAttribute="leading" constant="8" id="M43-L5-THH"/>
                                             <constraint firstAttribute="trailing" secondItem="yCY-zE-orN" secondAttribute="trailing" id="PWf-9a-L4G"/>
-                                            <constraint firstAttribute="bottom" secondItem="QtC-hO-RE3" secondAttribute="bottom" id="QZM-cx-KGt"/>
                                             <constraint firstItem="Eeo-LO-TTy" firstAttribute="top" secondItem="LO3-Wc-hk9" secondAttribute="bottom" constant="20" id="VEl-ft-l2H"/>
                                             <constraint firstItem="LO3-Wc-hk9" firstAttribute="centerX" secondItem="WDZ-CJ-Ux2" secondAttribute="centerX" id="Vli-wH-FMA"/>
                                             <constraint firstAttribute="trailing" secondItem="Eeo-LO-TTy" secondAttribute="trailing" constant="8" id="b6G-e8-vd4"/>
-                                            <constraint firstAttribute="trailing" secondItem="QtC-hO-RE3" secondAttribute="trailing" id="fws-MQ-YHA"/>
                                             <constraint firstItem="yCY-zE-orN" firstAttribute="leading" secondItem="WDZ-CJ-Ux2" secondAttribute="leading" id="gN3-1Q-PqY"/>
                                             <constraint firstItem="yCY-zE-orN" firstAttribute="centerX" secondItem="WDZ-CJ-Ux2" secondAttribute="centerX" id="pIP-sW-Us4"/>
+                                            <constraint firstItem="QtC-hO-RE3" firstAttribute="top" secondItem="Eeo-LO-TTy" secondAttribute="bottom" constant="8" id="rK5-HZ-YFx"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -87,6 +88,8 @@
                                     <constraint firstItem="WDZ-CJ-Ux2" firstAttribute="width" secondItem="Sj2-mh-Ytb" secondAttribute="width" id="C6a-TM-F0L"/>
                                     <constraint firstItem="WDZ-CJ-Ux2" firstAttribute="trailing" secondItem="oTr-pr-HlC" secondAttribute="trailing" id="FRW-h1-MOK"/>
                                     <constraint firstItem="WDZ-CJ-Ux2" firstAttribute="top" secondItem="oTr-pr-HlC" secondAttribute="top" id="IWf-gb-epv"/>
+                                    <constraint firstAttribute="bottom" secondItem="WDZ-CJ-Ux2" secondAttribute="bottom" id="T6z-m2-tdQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="WDZ-CJ-Ux2" secondAttribute="trailing" id="dEw-Qi-2M0"/>
                                     <constraint firstItem="WDZ-CJ-Ux2" firstAttribute="bottom" secondItem="oTr-pr-HlC" secondAttribute="bottom" id="wJd-sb-4wV"/>
                                     <constraint firstItem="WDZ-CJ-Ux2" firstAttribute="leading" secondItem="oTr-pr-HlC" secondAttribute="leading" id="yrM-ku-bY5"/>
                                 </constraints>
@@ -100,6 +103,7 @@
                             <constraint firstItem="Sj2-mh-Ytb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NXL-ch-K43"/>
                             <constraint firstItem="Sj2-mh-Ytb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b7o-ho-gwL"/>
                             <constraint firstItem="Sj2-mh-Ytb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ciS-fC-6vM"/>
+                            <constraint firstItem="WDZ-CJ-Ux2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="xMa-T2-cgu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -107,15 +111,22 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="camera" id="M66-DL-ZI8">
                             <color key="tintColor" red="0.1137254902" green="0.55294117649999996" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="cameraButton:" destination="BYZ-38-t0r" id="S84-tI-ny1"/>
+                                <action selector="cameraButtonTapped:" destination="BYZ-38-t0r" id="K8C-zi-mB9"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8TE-Yz-v8z">
                             <color key="tintColor" red="0.1137254902" green="0.55294117649999996" blue="0.63137254899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addPhotoButtonAdded:" destination="BYZ-38-t0r" id="c4S-Jv-Zne"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="414" height="1000"/>
                     <connections>
                         <outlet property="imageView" destination="yCY-zE-orN" id="c4c-9a-euD"/>
+                        <outlet property="languagePicker" destination="QtC-hO-RE3" id="Ns7-l2-Bah"/>
+                        <outlet property="selectLanguageButtonOutlet" destination="Eeo-LO-TTy" id="QZc-5s-87q"/>
+                        <outlet property="translatedTextLabel" destination="LO3-Wc-hk9" id="9iK-qK-EjE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
